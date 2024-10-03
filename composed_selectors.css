@@ -1,0 +1,72 @@
+/*
+
+*
+tagname
+attribute
+class
+id
+*/
+
+body, html {
+  margin: 0;
+}
+
+.big-list li {
+  font-size: 30px;
+}
+
+section div > button { /* button, který je přímým potomkem divu, který je kdekoli uvnitř section */
+  color: red;
+}
+
+button.btn-small { /* buttony, které mají třídu btn-small */
+  font-size: .8rem;
+}
+
+.bg-pink {
+  background: pink;
+}
+
+.bg-pink ~ li {
+  background: lightblue;
+}
+
+li:nth-child(even) {
+  background: #efefef;
+}
+
+/*
+
+1) rules platí pro sel1 a sel2 a sel3
+sel1, sel2, sel3 {
+  rules ...
+}
+
+2) rules platí pro sel2, který je potomkem sel1(nemusí být přímý)
+
+sel1 sel2 {
+  rules
+}
+
+3) rules platí pro sel2,
+který je potomkem sel1(musí být přímý)
+
+sel1 > sel2 {
+  rules
+}
+
+4) rules platí pro elementy, které současně vyhovují sel1 i sel2
+
+sel1.sel2 { rules }
+
+5) rules platí pro sel2, který přímo sousedí s sel1
+
+sel1 + sel2 { rules }
+
+6) rules platí pro sel2, který jakkoliv sousedí s sel1
+sel1+sel2 {
+  rules
+}
+
+!! css neumí vyselektovat předcházející sourozence
+*/

@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row; /* hlavní osa je x */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.square {
+  flex-basis: 100px;
+  height: 100px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square:first-child {
+  background: lightpink;
+  flex-grow: 6;
+  flex-shrink: 0;
+}
+.square:nth-child(2) {
+  background: lightgreen;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.square:nth-child(3) {
+  background: lightblue;
+  flex-grow: 0;
+}
+.square:last-child {
+  background: yellow;
+  flex-grow: 0;
+}
+
+
+/*
+display: block,
+display: inline,
+display: none (nezobrazí element vůbec)
+display: inline-block - neřádkuje, ale můžeme nastavit width a height
+
+*/

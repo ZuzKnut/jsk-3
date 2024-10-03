@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+  border: 1px solid #cdcdcd;
+  width: 300px;
+  margin: 30px 0 0 30px;
+  list-style-type: none;
+}
+
+li {
+  font-size: 1.1rem;
+  padding: .35em .6em;
+  border-bottom: 1px solid #cdcdcd;
+}
+li:last-of-type {
+  border-bottom: none;
+}
+
+li:nth-child(2n) {
+  background: #efefef;
+}
+
+
+
+/*
+.... nth-child - element, ktery je ntym ditetem sveho rodice
+:first-child
+:last-child
+:nth-child(1)
+:nth-child(2n)
+:nth-child(even)
+:nth-child(2n + 1)
+:nth-child(odd)
+
+.... nth-of-type - element, který je v určitém pořadí svého druhu uvnitř rodiče
+:first-of-type
+:last-of-type
+:nth-of-type(...)
+*/
